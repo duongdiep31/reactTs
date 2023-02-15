@@ -1,8 +1,27 @@
-{
-
-    
-    "compilerOptions": {},
-    "files": [
-        "*.ts"
-    ]
+{   
+    "compilerOptions": {
+        "module": "ESNext",
+        "target": "es5",
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "outDir": "./dist/",
+        "jsx": "react",
+        "allowJs": true,
+        "noImplicitAny": true,
+        "allowSyntheticDefaultImports": true,
+        "types": ["react/next", "react-dom/next"],
+        "lib": ["dom", "DOM.Iterable", "esnext" ],
+        "skipLibCheck": true,
+        "resolveJsonModule":true,
+        "baseUrl": "./src",
+        "paths": {
+            "@component/*": [
+                "component/*"
+            ]
+        }
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "include": ["src"]
 }
