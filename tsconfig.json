@@ -13,15 +13,15 @@
         "lib": ["dom", "DOM.Iterable", "esnext" ],
         "skipLibCheck": true,
         "resolveJsonModule":true,
-        "baseUrl": "./src",
+        "baseUrl": ".",
         "paths": {
             "@component/*": [
-                "component/*"
+                "src/component/*"
+            ],
+            "@assets/*": [
+                "src/assets/*"
             ]
         }
     },
-    "exclude": [
-        "node_modules"
-    ],
     "include": ["src"]
 }

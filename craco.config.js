@@ -1,5 +1,6 @@
 const path = require('path');
-const CracoAlias = require("craco-alias");
+const {CracoAliasPlugin} = require('react-app-alias')
+
 module.exports = {
         entry: './src/index.tsx',
         module: {
@@ -17,5 +18,11 @@ module.exports = {
         output: {
             filename: 'bundle.js',
             path: path.resolve(__dirname, 'dist')
-        }
+        }, 
+        plugins: [
+            {
+              plugin: CracoAliasPlugin,
+              options: {}
+            }
+        ]
 }

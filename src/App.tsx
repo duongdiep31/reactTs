@@ -1,8 +1,8 @@
 import "./App.css";
-
 import React from "react";
 import Hoc from "./HOC/hoc";
 import Child from "@component/child";
+import logo from "@assets/logo.svg"
 // import Hoc from "@Hoc/hoc";
 // import { useScreen } from "@hook/custome";
 export interface CurrentRef{
@@ -41,16 +41,16 @@ function App() {
   const ref = React.useRef<CurrentRef>();
   
   const Hight = Hoc(Child)
-  
+  console.log(logo)
   return (
     <>
       <div>
-        {/* <img src={logo} /> */}
+        <img src={logo} />
         {/* <button onClick={() => ref.current.clickMe()}>toggle</button> */}
         {/* <input onChange={(e) => setFetchStatus(e.target.value) } /> */}
         {/* {testUseCallback(fetchStatus)} */}
         {/* <Child ref={ref} fetchStatus={fetchStatus} /> */}
-        {/* <Hight /> */}
+        <Hight />
 
       </div>
     </>
