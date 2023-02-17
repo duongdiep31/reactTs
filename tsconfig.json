@@ -5,7 +5,7 @@
         "esModuleInterop": true,
         "moduleResolution": "node",
         "outDir": "./dist/",
-        "jsx": "react",
+        "jsx": "react-jsx",
         "allowJs": true,
         "noImplicitAny": true,
         "allowSyntheticDefaultImports": true,
